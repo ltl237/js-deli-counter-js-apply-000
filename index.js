@@ -4,10 +4,11 @@ function takeANumber(current_line,new_name) {
   var welcoming = `Welcome, ${new_name}. You are number ${current_line.length} in line.`
   return welcoming
 }
-
+var person_counter = 1;
+var deli_array = [];
 function takeAnotherNumber(deli_line) {
-  var deli_array = [];
-  var person_counter = 1; 
+  
+   
   deli_array.push(person_counter);
   var statement = `Welcome #${person_counter}`
   person_counter ++;
@@ -15,6 +16,12 @@ function takeAnotherNumber(deli_line) {
   return statement
   
 }
+
+function endOfDay(){
+  person_counter = 1;
+  return
+}
+
 
 
 //takeANumber(1,"Ada");
