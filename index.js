@@ -15,7 +15,7 @@ function nowServing(katzDeliLine) {
   else {
     //for (let i = 0; i < katzDeliLine.length; i++) {
       let serve_line = `Currently serving ${katzDeliLine[0]}`
-      katzDeliLine.remove(0)
+      katzDeliLine.pop(0)
       return serve_line
       //return `Currently serving ${katzDeliLine.shift()}.`
     //}
