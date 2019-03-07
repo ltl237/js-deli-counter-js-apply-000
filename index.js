@@ -5,6 +5,18 @@ function takeANumber(current_line,new_name) {
   return welcoming
 }
 
+function takeAnotherNumber(deli_line) {
+  var deli_array = [];
+  var person_counter = 1; 
+  deli_array.push(person_counter);
+  var statement = `Welcome #${person_counter}`
+  person_counter ++;
+  
+  return statement
+  
+}
+
+
 //takeANumber(1,"Ada");
 
 function nowServing(katzDeliLine) {
